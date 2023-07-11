@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./assets/main.js"></script>
+ <!--defer => diferido para realizar la insercion de los elementos-->
 </head>
 
 <body>
@@ -50,26 +52,16 @@
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
       <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="https://avatars.githubusercontent.com/u/48515514?s=400&u=e820ec5b0969d6a4cc53d5df18c079916724f8fa&v=4" alt="">
+        src="https://ui-avatars.com/api/?background=0D8ABC&color=fff" alt="">
     </div>
   </div>
   <div class="bg-white">
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Last YouTube Videos</h2>
-      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+      id="content"><!--  aca llamamos la iteracion -->
         <!-- content -->
-         <div class="group relative">
-          <div
-            class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
-            <img src="" alt="" class="w-full">
-          </div>
-          <div class="mt-4 flex justify-between">
-            <h3 class="text-sm text-gray-700">
-              <span aria-hidden="true" class="absolute inset-0"></span>
-              title
-            </h3>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
